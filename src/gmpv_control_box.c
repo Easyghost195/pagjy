@@ -246,6 +246,7 @@ static void simple_signal_handler(GtkWidget *widget, gpointer data)
 			{box->previous_button, "button-clicked", "previous"},
 			{box->next_button, "button-clicked", "next"},
 			{box->fullscreen_button, "button-clicked", "fullscreen"},
+			{box->repeat_button, "button-clicked", "repeat"},
 			{NULL, NULL, NULL} };
 
 	for(i = 0; signal_map[i].name && signal_map[i].widget != widget; i++);
